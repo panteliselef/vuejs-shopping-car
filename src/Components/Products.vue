@@ -1,6 +1,7 @@
 <template>
   <div class="product-list">
-    <div class="product" v-for="product in products">
+    
+    <div class="product" v-for="product in products" v-bind:key="product.name">
       <div style="display: flex; justify-content: space-between">
         
         <div class="product-name">{{product.name}}</div>
@@ -28,12 +29,6 @@
   }
 </script>
 <style>
-  .product-list {
-    max-width: 500px;
-    margin: auto;
-    margin-top: 6em;
-    width: 100%;
-  }
   .product-list .product {
     margin: 1em;
     padding: .7em 1em;

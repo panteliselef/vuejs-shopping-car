@@ -59,3 +59,11 @@
 
   }
 </script>
+<style>
+  .product-list {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 6em;
+    width: 100%;
+  }
+</style>
